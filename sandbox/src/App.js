@@ -16,7 +16,6 @@ export default function Board() {
       if (squares[i]) {
          return;
       }
-
       const nextSquares = squares.slice();
       if (xIsNext) {
          nextSquares[i] = "X";
