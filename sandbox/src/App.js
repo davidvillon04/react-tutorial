@@ -2,7 +2,13 @@ import { useState } from "react";
 
 function Square({ value, onSquareClick }) {
    return (
-      <button className="square" onClick={onSquareClick}>
+      <button
+         className="square"
+         onClick={onSquareClick}
+         style={{
+            color: value === "X" ? "red" : value === "O" ? "blue" : "inherit",
+         }}
+      >
          {value}
       </button>
    );
