@@ -68,6 +68,13 @@ body {
    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+.square.highlight {
+   background-color: rgb(136, 227, 255);
+   border: 2px solid rgb(255, 0, 0);
+   transform: scale(1.05);
+   transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
 .board-row:after {
    clear: both;
    content: "";
